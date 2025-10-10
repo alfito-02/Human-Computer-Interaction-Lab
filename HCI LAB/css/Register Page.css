@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("/HCI LAB/Image/pexels-photo-1640777.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+
+li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    position: relative;
+    background-color: #D5F0C1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: max;
+    height: 40px;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 4px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar ul{
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar ul li {
+    display: flex;
+}
+
+.button{
+    display: flex-end;
+    align-items: center;
+}
+
+.regBtn{
+    height: 35px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    border: none;
+    background-color: white;
+    border-color: #80BCBD;
+    color: #80BCBD;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.regBtn:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+/* Registration Form */
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    box-shadow: rgba(2, 2, 2, 0.15) 0px 6.5px 15px;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    gap: 25px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600px;
+    letter-spacing: 0.5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form,
+.type-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input,
+select{
+    background-color: #f0f0f0;
+    height: 40px;
+    width: 260px;
+    padding: 0 0.75rem;
+    border-radius: 0.3rem;
+    border: 2px solid transparent;
+    transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1);
+}
+
+label{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+
+.subbtn{
+    margin-top: 10px;
+    text-align: center;
+    padding: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400px;
+    width: 100%;
+    letter-spacing: 0.5px;
+    background-color: #D5F0C1;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.subbtn:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+/* Footer */
+
+.container3{
+    background-color: #F9F7C9;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: auto;
+    height: 70px;
+    align-content: center;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 3px;
+}
+
+.phone{
+    display: flex;
+    gap: 5px;
+}
+
+.mail{
+    display: flex;
+    gap: 5px;
+}
+
+.social{
+    display: flex;
+    gap: 100px;
+}
+
+.footer{
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+@media (max-width: 768px){
+    /* Navbar */
+
+    .regBtn{
+        margin-bottom: 15px;
+    }
+
+    .container{
+        height: 320px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding-top: 15px;
+        padding-left: 0px;
+        flex-direction: column;
+    }
+
+    /* Content */
+
+    .wrapper{
+        height: 150vh;
+    }
+
+    /* Footer */
+
+    .container3{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .social{
+        gap: 10px;
+    }
+}
+
+

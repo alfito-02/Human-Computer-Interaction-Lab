@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    position: relative;
+    background-color: #D5F0C1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 4px;
+    color: black;
+    font-size: 25px;    
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar ul{
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar ul li {
+    display: flex;
+}
+
+.button{
+    display: flex-end;
+    align-items: center;
+}
+
+.regBtn{
+    height: 35px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    border: none;
+    background-color: white;
+    border-color: #80BCBD;
+    color: #80BCBD;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.regBtn:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+/* Banner */
+
+.content-header{
+    background-image: url("/HCI LAB/Image/pexels-photo-1640773.jpeg");
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.content-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.content-header-text{
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    font-family: 'Trebuchet MS', '  ucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Recommendation */
+
+.content-middle{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-middle-text{
+    font-size: 30px;
+    text-align: center;
+}
+
+.content-middle-menu{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.content-middle-container-one{
+    background-image: url("/HCI LAB/Image/delish-221130-perfect-chicken-alfredo-0689-eb-1670449996.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 270px;
+    border-radius: 25px;
+    border-color: grey;
+    border: 2px solid;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.content-middle-container-one::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.content-middle-container-two{
+    background-image: url("/HCI LAB/Image/singleimagebug-arroz-con-pollo-pin-1556284551.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 270px;
+    border-radius: 25px;
+    border-color: grey;
+    border: 2px solid;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.content-middle-container-two::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.content-middle-container-three{
+    background-image: url("/HCI LAB/Image/chicken-florentine-pasta-lead-663945140711c.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 270px;
+    border-radius: 25px;
+    border-color: grey;
+    border: 2px solid;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.content-middle-container-three::before{
+    content: "";
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.content-middle-container-four{
+    background-image: url("/HCI LAB/Image/chicken-shawarma-bowls-lead-659dcc922af40.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 270px;
+    border-radius: 25px;
+    border-color: grey;
+    border: 2px solid;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.content-middle-container-four::before{
+    content: "";
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.inside{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+}
+
+.content-middle-container img{
+    border-radius: 25px;
+}
+
+/* Promo */
+
+.content-promo{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-promo-text{
+    font-size: 30px;
+    text-align: center;
+}
+
+.promo-menu{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.promo-container{
+    text-align: center;
+    width: 270px;
+    height: 270px;
+    border-radius: 25px;
+    border-color: grey;
+    border: 2px solid;
+}
+
+.promo-container img{
+    border-radius: 25px;
+}
+
+.content-middle-container-four{
+    background-image: url("/HCI LAB/Image/chicken-florentine-pasta-lead-663945140711c.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 270px;
+    border-radius: 25px;
+    border-color: grey;
+    border: 2px solid;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.content-middle-container-four::before{
+    content: "";
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Footer */
+
+.container3{
+    background-color: #F9F7C9;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: auto;
+    height: 70px;
+    align-content: center;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 3px;
+}
+
+.phone{
+    display: flex;
+    gap: 5px;
+}
+
+.mail{
+    display: flex;
+    gap: 5px;
+}
+
+.social{
+    display: flex;
+    gap: 100px;
+}
+
+.footer{
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+/* Mobile */
+
+@media (max-width: 768px){
+
+    /* Navbar */
+
+    .regBtn{
+        margin-bottom: 15px;
+    }
+
+    .container{
+        height: 320px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding-top: 15px;
+        padding-left: 0px;
+        flex-direction: column;
+    }
+
+    /* Content */
+
+    .content-middle{
+        height: 160vh;
+    }
+    
+    .content-middle-text{
+        padding-top: 50px;
+    }
+    
+    .content-middle-menu{
+        height: 200vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-header{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+
+    .content-promo{
+        height: 175vh;
+    }
+
+    .promo-menu{
+        height: 150vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Footer */
+
+    .container3{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .social{
+        gap: 10px;
+    }
+}   
+
+@media (min-width: 768px) and (max-width: 1079px){
+    /* Content */
+
+    .content-middle{
+        height: 160vh;
+    }
+    
+    .content-middle-text{
+        padding-top: 50px;
+    }
+    
+    .content-middle-menu{
+        height: 200vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-header{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+
+    .content-promo{
+        height: 175vh;
+    }
+
+    .promo-menu{
+        height: 150vh;
+        flex-direction: column;
+        align-items: center;
+    }
+}

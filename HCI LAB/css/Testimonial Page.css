@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.page-container{
+    position: relative;
+    min-height: 100%;
+    width: 101.5%;
+}
+
+/* Navbar */
+
+.container{
+
+    background-color: #D5F0C1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 4px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar ul{
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar ul li {
+    display: flex;
+}
+
+.button{
+    display: flex-end;
+    align-items: center;
+}
+
+.regBtn{
+    height: 35px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    border: none;
+    background-color: white;
+    border-color: #80BCBD;
+    color: #80BCBD;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.regBtn:hover{
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+li{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Testimonial Page */
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.testimonial{
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.content-testimonial{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-testimonial-one{
+    display: flex;
+    width: 30vw;
+    height: 40vh;
+    border: 2px solid#ccc;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.content-testimonial{
+    display: flex;
+}
+
+.testimonial-one-header{
+    display: flex;
+    width: 25vw;
+    gap: 20px;
+}
+
+.content-testimonial-title{
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-one{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+/* Footer */
+
+.container3{
+    background-color: #F9F7C9;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    align-content: center;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 3px;
+}
+
+.phone{
+    display: flex;
+    gap: 5px;
+}
+
+.mail{
+    display: flex;
+    gap: 5px;
+}
+
+.social{
+    display: flex;
+    gap: 100px;
+}
+
+.footer{
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}  
+
+@media (max-width: 840px){
+
+    /* Navbar */
+
+    .regBtn{
+        margin-bottom: 15px;
+    }
+
+    .container{
+        height: 320px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding-top: 15px;
+        padding-left: 0px;
+        flex-direction: column;
+    }
+
+    /* Content */
+
+    .testimonial{
+        height: 160vh;
+        gap: 15px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    .content-testimonial{
+        height: 140vh;
+        flex-direction: column;
+    }
+
+    .container-testimonial-one{
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .testimonial-one-header{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial-one{
+        width: 40vw;
+    }
+
+    /* Footer */
+
+    .container3{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .social{
+        gap: 10px;
+    }
+}
